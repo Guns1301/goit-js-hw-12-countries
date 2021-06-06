@@ -31,7 +31,7 @@ function searchCountry(event) {
     }
   });
 }
-
+// отрисовка
 function updateCountryCard(country) {
   const countryCard = countryCardTpl(country);
   countryContainer.insertAdjacentHTML('afterbegin', countryCard);
@@ -42,6 +42,7 @@ function updateCountriesList(countries) {
   countryContainer.insertAdjacentHTML('afterbegin', countryList);
 }
 
+// очищает строку ввода
 function clearCountryContainer() {
   countryContainer.innerHTML = '';
 }
